@@ -1,0 +1,8 @@
+{% for article in all %}
+<h1>{{article.heading}}</h1>
+<h3>{{article.created}}-{{article.reporter}}</h3>
+<img src={{article.image.url}} width=400px />
+<p>{{article.body}}</p>
+{% endfor %}
+
+
